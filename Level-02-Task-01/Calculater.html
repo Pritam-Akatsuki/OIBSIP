@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Basic Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1 class="logo">CASIO</h1>
+        <input type="text" class="display" id="display" readonly>
+        <div class="buttons">
+            <button class="number big-button" onclick="appendToDisplay('7')">7</button>
+            <button class="number big-button" onclick="appendToDisplay('8')">8</button>
+            <button class="number big-button" onclick="appendToDisplay('9')">9</button>
+            <button class="operator big-button" onclick="appendToDisplay('+')">+</button>
+            <button class="number big-button" onclick="appendToDisplay('4')">4</button>
+            <button class="number big-button" onclick="appendToDisplay('5')">5</button>
+            <button class="number big-button" onclick="appendToDisplay('6')">6</button>
+            <button class="operator big-button" onclick="appendToDisplay('-')">-</button>
+            <button class="number big-button" onclick="appendToDisplay('1')">1</button>
+            <button class="number big-button" onclick="appendToDisplay('2')">2</button>
+            <button class="number big-button" onclick="appendToDisplay('3')">3</button>
+            <button class="operator big-button" onclick="appendToDisplay('*')">*</button>
+            <button class="extra big-button" onclick="appendToDisplay('(')">(</button>
+            <button class="number big-button" onclick="appendToDisplay('0')">0</button>
+            <button class="extra big-button" onclick="appendToDisplay(')')">)</button>
+            <button class="operator big-button" onclick="appendToDisplay('/')">/</button>
+            <button class="extra big-button" onclick="appendToDisplay('.')">.</button>
+            <button class="clear big-button" onclick="clearDisplay()">C</button>
+            <button class="extra big-button" onclick="backspace()">DEL</button>
+            <button class="equal big-button" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
